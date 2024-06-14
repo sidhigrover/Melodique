@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Boxes</title>
+    <link rel="stylesheet" href="layout_idea.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma" />
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <h2>
+            <center>Languages</center>
+        </h2>
+        <ul class="rounded-list">
+            <li onclick="openNewPage('layout_idea.html')">English</li>
+            <li onclick="openNewPage('hindi_layout.html')">Hindi</li>
+            <li onclick="openNewPage('french_layout.html')">French</li>
+            <li onclick="openNewPage('spanish_layout.html')">Spanish</li>
+            <li onclick="openNewPage('italian_layout.html')">Italian</li>
+            <li>Korean</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+        <!-- Add more links as needed -->
+    </div>
+    <!-- Content -->
+    <div id="content">
+        <div class="box" onclick="openNewPage('hindi1.html')">
+            <div class="name">Channa Mereya</div><img class="cover" src="/assets/channamereya.jpg">
+        </div>
+        <div class="box" onclick="openNewPage('hindi2.html')">
+            <div class="name">Jeene Laga Hoon</div><img class="cover" src="/assets/jeenelgahu.jpg">
+        </div>
+        <div class="box" onclick="openNewPage('hindi3.html')">
+            <div class="name">Muskurane</div><img class="cover" src="/assets/muskurane.jpg">
+        </div>
+        <div class="box" onclick="openNewPage('hindi4.html')">
+            <div class="name">Khatta Flow</div><img class="cover" src="/assets/khattaflow.webp">
+        </div>
+        <div class="box" onclick="openNewPage('hindi5.html')">
+            <div class="name">Sun Saathiyan</div><img class="cover" src="/assets/sunsaathiya.jpg">
+        </div>
+        <div class="box" onclick="openNewPage('hindi6.html')">
+            <div class="name">Tera ban Jaunga</div><img class="cover" src="/assets/terabanjaumga.jpg">
+        </div>
+        <div class="box" onclick="openNewPage('hindi7.html')">
+            <div class="name">Breathless</div><img class="cover" src="/assets/breathless.jpg">
+        </div>
+        <div class="box" onclick="openNewPage('hindi8.html')">
+            <div class="name">Mere Sapnon Ki Rani</div><img class="cover" src="/assets/mskr.jpeg">
+        </div>
+        <div class="box" onclick="openNewPage('hindi9.html')">
+            <div class="name">Kasoor</div><img class="cover" src="/assets/kasoor.jpg">
+        </div>
+    </div>
+
+    <script>
+        function openNewPage(page) {
+            window.open(page, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>

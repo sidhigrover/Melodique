@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #212121; /* Dark black background color */
+  background: url("../assets/waves_bg.jpg") center/cover fixed; /* Replace 'your-image-url.jpg' with the actual image URL */
+}
+
+#content {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #f0f0f0; /* Light color for h2 heading */
+  margin-top: 2px;
+}
+
+button {
+  background-color: #1db954;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
+
+#audioPlayer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212121;
+  padding: 10px;
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+}
+
+#lyricsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#lyrics,
+#translation {
+  flex-basis: 45%;
+  white-space: pre-line;
+  color: #f5f5f5; /* White creamish color for lyrics and translation */
+  text-align: left;
+  margin: 43px 37px 23px 135px;
+}
+
+#lyrics {
+  margin-right: 6px;
+}

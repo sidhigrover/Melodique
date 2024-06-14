@@ -1,0 +1,65 @@
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+#audioContainer {
+  margin-top: 20px;
+  position: relative;
+}
+
+#audioPlayer {
+  display: none; /* Hide the audio player */
+}
+
+#guessMeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.optionsContainer {
+  margin-top: 20px;
+}
+
+.option,
+#replayOptions button,
+#nextSongBtn {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#replayOptions button:hover,
+#nextSongBtn:hover {
+  background-color: #2ecc71;
+}
+
+#startGameBtn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#startGameBtn:hover {
+  background-color: #2ecc71;
+}

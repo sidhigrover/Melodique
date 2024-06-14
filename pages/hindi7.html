@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hindi5</title>
+    <link rel="stylesheet" type="text/css" href="./lyricsapi.css" />
+  </head>
+  <body>
+    <div id="content">
+      <h2>Song List</h2>
+      <button
+        onclick="playAndFetchLyrics('breathless', 'Shankar Mahadevan', 'Breathless',185,'../assets/Hindi/breathless.mp3')"
+      >
+      Breathless
+      </button>
+
+      <div id="audioPlayer">
+        <audio controls id="audioElement">
+          <!-- Audio source will be set dynamically -->
+        </audio>
+      </div>
+
+      <div id="lyrics">
+        <!-- Lyrics will be displayed here -->
+      </div>
+    </div>
+
+    <script src="./lyricsapi.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="song_guesser.css" />
+    <title>Song Guessing Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Song Guessing Game</h1>
+      <div id="audioContainer">
+        <audio id="audioPlayer" controls style="display: none"></audio>
+      </div>
+      <div id="optionsContainer"></div>
+      <div id="replayOptions"></div>
+      <button id="startGameBtn" onclick="startGame()">Start Game</button>
+      <button id="nextSongBtn" onclick="nextSong()" style="display: none">
+        Next Song
+      </button>
+      <p id="result"></p>
+      <p id="points">Points: <span id="score">0</span></p>
+    </div>
+    <script src="song_guesser.js"></script>
+  </body>
+</html>

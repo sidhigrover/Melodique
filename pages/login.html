@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Sign Up or Log In</title>
+    <link rel="stylesheet" href="login_style.css"></link>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="showSignUp()">Sign Up</button>
+            <button class="tab-button" onclick="showLogin()">Log In</button>
+        </div>
+
+        <div id="sign-up-form">
+            
+            <form name="myform" method='POST' action='usersignup.php ' onsubmit="return validatesignup()">
+                    Username<input type="text" placeholder="Enter Username" name="username" required> <br> <br>
+                    Email<input type="email" placeholder="Enter Email" name="email" required><br><br> 
+                    Password<input type="password" placeholder="Enter Password" name="password" required> <br> <br>
+                    <input type="submit" name='submit' value="Submit">
+            </form>
+        </div>
+
+        <div id="login-form">
+           
+            <form action="userlogin.php" method="POST" onsubmit="return validatelogin()">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showSignUp() {
+            document.getElementById("sign-up-form").style.display = "block";
+            document.getElementById("login-form").style.display = "none";
+            document.querySelector(".tab-button.active").classList.remove("active");
+            document.querySelectorAll(".tab-button")[0].classList.add("active");
+        }
+
+        function showLogin() {
+            document.getElementById("login-form").style.display = "block";
+            document.getElementById("sign-up-form").style.display = "none";
+            document.querySelector(".tab-button.active").classList.remove("active");
+            document.querySelectorAll(".tab-button")[1].classList.add("active");
+        }
+    </script>
+</body>
+</html>

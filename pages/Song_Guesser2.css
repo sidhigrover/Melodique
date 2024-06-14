@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("/assets/Song_Guesser2.jpg");
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+#upperSection{
+    display: flex;
+    width: 90vw;
+    justify-content:space-between;
+}
+
+#lowerSection{
+    display: flex;
+    width: 90vw;
+    justify-content:space-between;
+}
+
+.chord-container,
+.game-container {
+    background-color: #fffbf0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    align-self: flex-start;
+    border: 2px solid black;
+}
+
+.chord-container{
+    align-self: flex-start;
+}
+
+.game-container{
+    width: 70%;
+    margin: 0%;
+    margin-right: 5%;
+}
+
+#visualizerContainer{
+ justify-content: flex-start; 
+ background: transparent;
+ margin-right: 3%;
+}
+
+#chordImage img{
+    width: 60%;
+}
+
+#chordImage{
+margin-left: 10%;
+margin-top: 3%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #FBC630;
+}
+
+#nextChordBtn {
+    background-color: #FBC630;
+    color: #000000;
+    margin-left: 10px;
+    border: 2px solid black;
+}
+
+#chordDisplay {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#optionsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.option {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 10%;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #FBC630;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+#chord_Image {
+    filter: blur(5px); /* Initial blur effect */
+    transition: filter 0.5s ease; /* Smooth transition for blur effect */
+}
+
+#chord_Image.blurred-image {
+    filter: blur(0); /* Remove blur effect */
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page1</title>
+    <link rel="stylesheet" type="text/css" href="./lyricsapi.css" />
+  </head>
+  <body>
+    <div id="content">
+      <h2>Song List</h2>
+      <button
+        onclick="playAndFetchLyrics('As it was', 'Harry Styles', 'Harrys House', 166, '../assets/English/asitwas.mp3')"
+      >
+        As It Was
+      </button>
+
+      <div id="audioPlayer">
+        <audio controls id="audioElement">
+          <!-- Audio source will be set dynamically -->
+        </audio>
+      </div>
+
+      <div id="lyrics">
+        <!-- Lyrics will be displayed here -->
+      </div>
+    </div>
+
+    <script src="./lyricsapi.js"></script>
+  </body>
+</html>

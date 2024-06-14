@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hindi2</title>
+    <link rel="stylesheet" type="text/css" href="./lyricsapi.css" />
+  </head>
+  <body>
+    <div id="content">
+      <h2>Song List</h2>
+      <button
+        onclick="playAndFetchLyrics('Jeene Laga Hoon', 'Atif Aslam', 'Jeene Laga Hoon', 237, '../assets/Hindi/JeeneLagaHoon.mp3')"
+      >
+      Jeene Laga Hoon
+      </button>
+
+      <div id="audioPlayer">
+        <audio controls id="audioElement">
+          <!-- Audio source will be set dynamically -->
+        </audio>
+      </div>
+
+      <div id="lyrics">
+        <!-- Lyrics will be displayed here -->
+      </div>
+    </div>
+
+    <script src="./lyricsapi.js"></script>
+  </body>
+</html>
